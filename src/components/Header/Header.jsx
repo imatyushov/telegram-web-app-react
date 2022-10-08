@@ -5,6 +5,7 @@ import './Header.css'
 
 const Header = () => {
     const {user, onClose} = useTelegram()
+
     return (
         <div className={'header'}>
             <Button onClick={onClose}>Закрыть</Button>
