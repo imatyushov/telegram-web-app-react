@@ -52,7 +52,7 @@ const ProductList = () => {
             products: addedItems,
             totalPrice: getTotalPrice(addedItems),
         }
-        fetch('http://localhost:8000', {
+        fetch('http://localhost:8000/web-data', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application.json',
