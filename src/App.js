@@ -14,11 +14,11 @@ const App = () => {
     }, [])
 
     return (
-        <div className='App'>
-            <Header/>
+        <div className="App">
+            <Header />
             <Routes>
-                <Route index element={<ProductList/>}/>
-                <Route path={'form'} element={<Form/>}/>
+                <Route index element={<ProductList />}/>
+                <Route path={'form'} element={<Form />}/>
             </Routes>
         </div>
     );
