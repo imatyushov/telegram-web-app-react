@@ -20,7 +20,7 @@ const getTotalPrice = (items = []) => {
 }
 
 
-const ProductList = (products) => {
+const ProductList = () => {
     const [addedItems, setAddedItems] = useState([])
     const {tg} = useTelegram()
 
@@ -51,6 +51,7 @@ const ProductList = (products) => {
                 <ProductItem
                     product={item}
                     onAdd={onAdd}
+                    key={item.id}
                     className={'item'}
                 />
             )}
